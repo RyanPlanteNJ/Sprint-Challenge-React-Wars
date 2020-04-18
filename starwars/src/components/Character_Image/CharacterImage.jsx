@@ -9,7 +9,7 @@ const ImageContainer = styled.div`
 
 const ImageSize = styled.img`
     margin-top: 10px;
-    width:50%;
+    width:30%;
 `;
 
 export default function CharacterImage(props) {

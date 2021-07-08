@@ -1,18 +1,21 @@
 import React from 'react';
 import './App.css';
+import styled from "styled-components";
+import CharacterContainer from "./components/Character_ID/CharacterContainer"
 
-const App = () => {
-  // Try to think through what state you'll need for this app before starting. Then build out
-  // the state properties here.
-
-  // Fetch characters from the API in an effect hook. Remember, anytime you have a 
-  // side effect in a component, you want to think about which state and/or props it should
-  // sync up with, if any.
+  const Container = styled.div`
+     max-width: 1024px;
+     margin: auto;
+     padding: 30px;
+     text-align: center
+ `; 
+function App() {
 
   return (
-    <div className="App">
-      <h1 className="Header">Characters</h1>
-    </div>
+    <Container className="App">
+      <h1 className="Header">Rick & Morty Characters</h1>
+      <CharacterContainer />
+    </Container>
   );
 }
 
